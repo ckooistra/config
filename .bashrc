@@ -119,6 +119,11 @@ alias ..='cd ..'
 alias py='python3'
 alias nmr='sudo service network-manager restart'
 alias dirop='xsel --clipboard < ~/iro_pass.txt'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias cls='clear'
+alias puip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 # added by Miniconda3 4.3.11 installer
 export PATH="$PATH:/home/chris/miniconda3/bin"
