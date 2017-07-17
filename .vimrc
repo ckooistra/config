@@ -23,7 +23,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'tpope/vim-fugitive'
-
+"Plugin 'python-mode/python-mode'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -44,14 +44,15 @@ let g:solarized_termcolors=256
 hi IndentGuidesOdd  ctermbg=black
 hi IndentGuidesEven ctermbg=darkgrey
 
-au BufNewFile,BufRead *.py                                                                             
-    \ set tabstop=4 |                                                                                 
-    \ set softtabstop=4 |                                                                             
-    \ set shiftwidth=4 |                                                                               
-    \ set textwidth=79 |                                                                              
-    \ set expandtab |                                                                                 
-    \ set autoindent |                                                                                 
-    \ set fileformat=unix                                                                              
+let g:ycm_autoclose_preview_window_after_insertion = 1
+"au BufNewFile,BufRead *.py                                                                             
+ "   \ set tabstop=4 |                                                                                 
+"    \ set softtabstop=4 |                                                                             
+"    \ set shiftwidth=4 |                                                                               
+"    \ set textwidth=79 |                                                                              
+"    \ set expandtab |                                                                                 
+"    \ set autoindent |                                                                                 
+"    \ set fileformat=unix                                                                              
                                                                                                       
 au BufNewFile,BufRead *.js, *.html, *.css                                                             
     \ set tabstop=2                                                                                   
