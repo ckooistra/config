@@ -110,3 +110,4 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 DISABLE_AUTO_TITLE=true
+export NODE_PATH=:/usr/local/lib/node_modules

@@ -37,7 +37,6 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
     xterm-color|*-256color) color_prompt=yes;;
 esac
 
@@ -85,8 +84,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-# some more ls aliases
-alias ll='ls -alhtF'
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
@@ -118,27 +115,3 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-alias ..='cd ..'
-alias fsi='du -a -h --max-depth=1 | sort -hr'
-alias py='/home/chris/anaconda3/bin/python3'
-
-# added by Anaconda3 4.3.1 installer
-export PATH="$PATH:/home/chris/anaconda3/bin"
-
-export TERM="screen-256color"
-alias tmux='tmux -2'
-export DISPLAY=:0.0
-alias ..='cd ..'
-alias py='/home/chris/anaconda3/bin/python3'
-alias ipy='/home/chris/anaconda3/bin/ipython3'
-alias nmr='sudo service network-manager restart'
-alias dirop='xsel --clipboard < ~/iro_pass.txt'
-alias ...='cd ../../'
-alias ....='cd ../../../'
-alias .....='cd ../../../../'
-alias cls='clear'
-alias puip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias mnthd='sudo mount /dev/sdb1 /media/chris/6d8b2044-0ff8-46f0-9105-afb5536b6098'
-# added by Miniconda3 4.3.11 installer
-export PATH="$PATH:/home/chris/miniconda3/bin"
